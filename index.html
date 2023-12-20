@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Color Palette */
+    /* Color Palette */
+    :root {
+      --primary-color: #285430;
+      --secondary-color: #5F8D4E;
+      --accent-color: #A4BE7B;
+      --highlight-color: #E5D9B6;
+    }
+
+    * {
+      color: #E5D9B6
+    }
+
+    /* Updated CSS with increased vertical height */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
+      background-color: var(--secondary-color);
+      /* Background color for the entire screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #container {
+      text-align: center;
+      background-color: #201818;
+      /* Fallback for browsers that don't support var() */
+      width: 300px;
+      padding: 30px;
+      /* Increased padding for more spacing inside */
+      border: 2px solid var(--primary-color);
+      border-radius: 15px;
+      /* Rounded corners */
+      background-color: var(--primary-color);
+    }
+
+    #inputData {
+      font-size: 16px;
+      color: #2b2b2b;
+      border: 1px solid var(--accent-color);
+      padding: 12px;
+      /* More padding for the input */
+      margin-bottom: 20px;
+      /* Increased margin between input and button */
+      display: block;
+      width: calc(100% - 26px);
+      /* Adjusted width considering the border */
+      border-radius: 8px;
+      /* Rounded corners for input */
+      background-color: var(--accent-color);
+    }
+
+    button {
+      font-size: 16px;
+      color: #FFFFFF;
+      background-color: var(--primary-color);
+      border: 2px solid var(--secondary-color);
+      padding: 12px 24px;
+      /* More padding for the button */
+      cursor: pointer;
+      border-radius: 8px;
+      /* Rounded corners for button */
+      background-color: var(--accent-color);
+    }
+
+    p#addResult {
+      /* Any specific styles for the result paragraph */
+      font-size: 14px; /* Adjust font size */
+  color: var(--highlight-color); /* Text color from palette */
+  margin-top: 20px; /* Space between button and result */
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div id="container">
+    <h1>Add something good</h1>
+    <input type="text" id="inputData" placeholder="Enter data">
+    <button onclick="addData()">Lolz</button>
+    <p id="addResult"></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <!-- Your JavaScript functions can be placed here -->
+
+</body>
+
+</html>
